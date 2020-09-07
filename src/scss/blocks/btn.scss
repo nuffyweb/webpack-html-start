@@ -1,0 +1,28 @@
+.btn {
+    @extend %button-base;
+    @media (max-width: 767px) {
+        width: 100%;
+        max-width: 100%;
+    }
+    &--full {
+        width: 100%;
+    }
+    &--base {
+        @extend %text-body;
+        color: $color-common;
+        padding-left: 0;
+        padding-right: 0;
+        &:active,
+        &:focus,
+        &:hover {
+            color: $color-accent;
+        }
+    }
+    &--accent {
+        @extend %button-accent;
+    }
+    &--common {
+        @extend %button-common;
+    }
+
+}

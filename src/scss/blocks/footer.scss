@@ -1,0 +1,20 @@
+@svg-load footer-logo url(../images/logo.svg) {
+    fill: #cfc;
+    path{
+        fill: crimson;
+    }
+}
+.footer-logo {
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+        background-image: svg-inline(footer-logo);
+        background-repeat:  no-repeat;
+        background-size: cover;
+    }
+
+}

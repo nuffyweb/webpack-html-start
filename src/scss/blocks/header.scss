@@ -1,0 +1,46 @@
+//----------------------------- header ----------------------------------
+@svg-load header-btn url(../images/logo.svg) {
+    fill: #cfc;
+    path{
+        fill: #ffffff;
+    }
+}
+.header {
+    z-index: 3;
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    background: transparent;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &-logo {
+        width: 106px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        @media (max-width: 767px) {
+            width: 64px;
+        }
+    }
+
+    &__btn {
+        margin-right: 30px;
+        &--icon {
+            position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+            background-image: svg-inline(header-btn);
+        background-repeat:  no-repeat;
+        background-size: cover;
+    }
+
+        }
+    }
+}

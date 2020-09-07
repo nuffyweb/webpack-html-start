@@ -1,0 +1,28 @@
+@import "base/typography.scss";
+@import "base/variables.scss";
+@import "base/base.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/btn.scss";
+@import "blocks/footer.scss";
+
+
+
+
+img {
+    width: 50%;
+}
+.wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sortlist {
+    & path {
+        fill: blue;
+    }
+    fill: blue;
+}
